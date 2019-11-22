@@ -37,7 +37,7 @@ async def on_message(message):
         await client.send_message(message.channel, msg)
 
     if message.content.startswith(fr + '열대저기압'):
-        msg = '북서 태평양(태풍):`열대폭풍 갈매기`-60kts(TS)'.format(message)
+        msg = '북서 태평양(태풍):`열대폭풍 풍웡`-45kts(TS)\n북 대서양(허리케인):`열대폭풍 세바스천`-50kts(TS)'.format(message)
         await client.send_message(message.channel, msg)
 
     if message.content==(fr + '가위'):
