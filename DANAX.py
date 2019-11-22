@@ -73,6 +73,23 @@ async def on_message(message):
     if message.content==(fr + '도움'):
        embed = discord.Embed(title="DANAX 도움말", description="**~다낙스**:가벼운 인사를 건넵니다.\n**~가위/바위/보**:DANAX와 가위바위보를 합니다.\n**~열대저기압**:현재 활동 중인 열대저기압 정보를 알려줍니다.", color=0x00faf4)
        await client.send_message(message.channel, embed=embed)
+     
+    if message.content.startswith(fr + '주사위'):
+
+        randomNum = random.randrange(1, 7) 
+        print(randomNum)
+        if randomNum == 1:
+            await client.send_message(message.channel, embed=discord.Embed(description=':game_die: '+ ':one:', color=0x00faf4))
+        if randomNum == 2:
+            await client.send_message(message.channel, embed=discord.Embed(description=':game_die: ' + ':two:', color=0x00faf4))
+        if randomNum ==3:
+            await client.send_message(message.channel, embed=discord.Embed(description=':game_die: ' + ':three:', color=0x00faf4))
+        if randomNum ==4:
+            await client.send_message(message.channel, embed=discord.Embed(description=':game_die: ' + ':four:', color=0x00faf4))
+        if randomNum ==5:
+            await client.send_message(message.channel, embed=discord.Embed(description=':game_die: ' + ':five:', color=0x00faf4))
+        if randomNum ==6:
+            await client.send_message(message.channel, embed=discord.Embed(description=':game_die: ' + ':six: ', color=0x00faf4))
 
     
 @client.event
