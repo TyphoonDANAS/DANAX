@@ -11,7 +11,7 @@ import os
 
 system("title "+"DANAX")
 
-TOKEN = 'NTg5NDcxMDgxMzU0NDk0MDEy.XdEtCg.iNgw9v6RzAU1fXABPG8JhwRJqZg'
+TOKEN = os.environ["BOT_TOKEN"]
 calcResult = 0
 
 client = discord.Client()
